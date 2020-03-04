@@ -558,7 +558,7 @@ function endGame()
   if(frog.doorHit == true)
   {
     gameOverMessage.text = "You Won!";
-    setTimeout(returnToMenu, 3000);
+    setTimeout(nextLevel, 3000);
 
   }
   else
@@ -570,7 +570,7 @@ function endGame()
 }
 
 
-function returnToMenu()
+function nextLevel()
 {
   window.location.href = "EnemyLevel.html"
 }

@@ -407,13 +407,13 @@ function endGame()
   else
   {
     gameOverMessage.text = "You Won!";
-    setTimeout(nextLevel, 3000);
+    setTimeout(returnToMenu, 3000);
 
   }
 }
 
 
-function nextLevel()
+function returnToMenu()
 {
   window.location.href = "index.html";
 }
