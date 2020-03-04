@@ -613,18 +613,25 @@ function endGame()
   if(enemiesSquashed === 3 && !frog.gotRekt)
   {
     gameOverMessage.text = "You Won!";
+    setTimeout(nextLevel, 3000);
   }
   else
   {
     gameOverMessage.text = "You Lost!";
+    setTimeout(restartLevel, 3000);
   }
-  setTimeout(returnToMenu, 3000);
+
 }
 
 
-function returnToMenu()
+function nextLevel()
 {
-  window.location.href = "menu.html";
+  window.location.href = "TimeLevel.html";
+}
+
+function restartLevel()
+{
+  window.location.href = "EnemyLevel.html";
 }
 
 

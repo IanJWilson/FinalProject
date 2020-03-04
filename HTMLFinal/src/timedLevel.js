@@ -401,20 +401,26 @@ function endGame()
   if(gameTimer.time === 0)
   {
     gameOverMessage.text = "You Lost!";
-    setTimeout(returnToMenu, 3000);
+    setTimeout(restartLevel, 3000);
 
   }
   else
   {
     gameOverMessage.text = "You Won!";
-    setTimeout(returnToMenu, 3000);
+    setTimeout(nextLevel, 3000);
+
   }
 }
 
 
-function returnToMenu()
+function nextLevel()
 {
-  window.location.href = "menu.html";
+  window.location.href = "index.html";
+}
+
+function restartLevel()
+{
+  window.location.href = "TimeLevel.html";
 }
 
 

@@ -558,19 +558,26 @@ function endGame()
   if(frog.doorHit == true)
   {
     gameOverMessage.text = "You Won!";
+    setTimeout(returnToMenu, 3000);
 
   }
   else
   {
     gameOverMessage.text = "You Lost!";
+    setTimeout(restartLevel, 3000);
   }
-  setTimeout(returnToMenu, 3000);
+
 }
 
 
 function returnToMenu()
 {
-  window.location.href = "menu.html";
+  window.location.href = "EnemyLevel.html"
+}
+
+function restartLevel()
+{
+  window.location.href = "PowerUpLevel.html";
 }
 
 function render()
